@@ -552,11 +552,6 @@ export default {
         },
         createStyle() {
             if (!this.styleElement && !this.isUnstyled) {
-                this.styleElement = document.createElement('style');
-                this.styleElement.type = 'text/css';
-                setAttribute(this.styleElement, 'nonce', this.$primevue?.config?.csp?.nonce);
-                document.head.appendChild(this.styleElement);
-
                 let innerHTML = `
 @media screen and (max-width: ${this.breakpoint}) {
     .p-picklist[${this.$attrSelector}] {
@@ -569,12 +564,12 @@ export default {
 }
 `;
 
-                this.styleElement.innerHTML = innerHTML;
+                this.styleElement = this.$primevueBaseStyle.load(innerHTML, { name: `picklist-style-${this.$id}`, ...this.$styleOptions });
             }
         },
         destroyStyle() {
             if (this.styleElement) {
-                document.head.removeChild(this.styleElement);
+                this.styleElement.unload();
                 this.styleElement = null;
             }
         },

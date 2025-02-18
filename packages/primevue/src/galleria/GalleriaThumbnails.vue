@@ -206,7 +206,7 @@ export default {
         }
 
         if (this.thumbnailsStyle) {
-            this.thumbnailsStyle.parentNode.removeChild(this.thumbnailsStyle);
+            this.thumbnailsStyle.unload();
         }
     },
     methods: {
@@ -439,13 +439,6 @@ export default {
             return this.value.length > this.d_numVisible ? this.value.length - this.d_numVisible + 1 : 0;
         },
         createStyle() {
-            if (!this.thumbnailsStyle) {
-                this.thumbnailsStyle = document.createElement('style');
-                this.thumbnailsStyle.type = 'text/css';
-                setAttribute(this.thumbnailsStyle, 'nonce', this.$primevue?.config?.csp?.nonce);
-                document.body.appendChild(this.thumbnailsStyle);
-            }
-
             let innerHTML = `
                 #${this.containerId} [data-pc-section="thumbnailitem"] {
                     flex: 1 0 ${100 / this.d_numVisible}%
@@ -476,7 +469,7 @@ export default {
                 }
             }
 
-            this.thumbnailsStyle.innerHTML = innerHTML;
+            this.thumbnailsStyle = this.$primevueBaseStyle.load(innerHTML, { name: `galleria-thumbnails-style-${this.$id}`, ...this.$styleOptions });
         },
         calculatePosition() {
             if (this.$refs.itemsContainer && this.sortedResponsiveOptions) {

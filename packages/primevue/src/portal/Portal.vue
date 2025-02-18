@@ -3,7 +3,7 @@
         <slot></slot>
     </template>
     <template v-else-if="mounted">
-        <Teleport :to="appendTo">
+        <Teleport :to="appendToValue">
             <slot></slot>
         </Teleport>
     </template>
@@ -35,6 +35,23 @@ export default {
     computed: {
         inline() {
             return this.disabled || this.appendTo === 'self';
+        },
+        appendToValue() {
+            let appendTo = this.appendTo;
+
+            if (appendTo === 'body') {
+                if (this.$primevue.root?.host) {
+                    if (this.$primevue.config.prefix) {
+                        appendTo = this.$primevue.root.querySelector(this.$primevue.config.prefix);
+                    } else {
+                        appendTo = this.$primevue.root;
+                    }
+                } else if (this.$primevue.config.prefix) {
+                    appendTo = this.$primevue.config.prefix;
+                }
+            }
+
+            return appendTo;
         }
     }
 };

@@ -224,17 +224,17 @@ export default {
             }
 
             if (!this.modal) {
-                this.maximized ? blockBodyScroll() : unblockBodyScroll();
+                this.maximized ? blockBodyScroll(this.$primevue.styled.$dt) : unblockBodyScroll(this.$primevue.styled.$dt);
             }
         },
         enableDocumentSettings() {
             if (this.modal || (!this.modal && this.blockScroll) || (this.maximizable && this.maximized)) {
-                blockBodyScroll();
+                blockBodyScroll(this.$primevue.styled.$dt);
             }
         },
         unbindDocumentState() {
             if (this.modal || (!this.modal && this.blockScroll) || (this.maximizable && this.maximized)) {
-                unblockBodyScroll();
+                unblockBodyScroll(this.$primevue.styled.$dt);
             }
         },
         onKeyDown(event) {
@@ -277,11 +277,6 @@ export default {
         },
         createStyle() {
             if (!this.styleElement && !this.isUnstyled) {
-                this.styleElement = document.createElement('style');
-                this.styleElement.type = 'text/css';
-                setAttribute(this.styleElement, 'nonce', this.$primevue?.config?.csp?.nonce);
-                document.head.appendChild(this.styleElement);
-
                 let innerHTML = '';
 
                 for (let breakpoint in this.breakpoints) {
@@ -294,12 +289,12 @@ export default {
                     `;
                 }
 
-                this.styleElement.innerHTML = innerHTML;
+                this.styleElement = this.$primevueBaseStyle.load(innerHTML, { name: `dialog-style-${this.$id}`, ...this.$styleOptions });
             }
         },
         destroyStyle() {
             if (this.styleElement) {
-                document.head.removeChild(this.styleElement);
+                this.styleElement.unload();
                 this.styleElement = null;
             }
         },
