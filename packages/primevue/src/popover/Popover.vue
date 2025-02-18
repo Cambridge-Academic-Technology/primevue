@@ -14,7 +14,6 @@
 </template>
 
 <script>
-import { $dt } from '@primeuix/styled';
 import { absolutePosition, addClass, addStyle, focus, getOffset, isClient, isTouchDevice, setAttribute } from '@primeuix/utils/dom';
 import { ZIndex } from '@primeuix/utils/zindex';
 import { ConnectedOverlayScrollHandler } from '@primevue/core/utils';
@@ -160,7 +159,7 @@ export default {
                 arrowLeft = targetOffset.left - containerOffset.left;
             }
 
-            this.container.style.setProperty($dt('popover.arrow.left').name, `${arrowLeft}px`);
+            this.container.style.setProperty(this.$primevue.styled.$dt('popover.arrow.left').name, `${arrowLeft}px`);
 
             if (containerOffset.top < targetOffset.top) {
                 this.container.setAttribute('data-p-popover-flipped', 'true');
@@ -212,7 +211,8 @@ export default {
         bindOutsideClickListener() {
             if (!this.outsideClickListener && isClient()) {
                 this.outsideClickListener = (event) => {
-                    if (this.visible && !this.selfClick && !this.isTargetClicked(event)) {
+                    const target = event.composedPath()[0];
+                    if (this.visible && !this.selfClick && !this.isTargetClicked(target)) {
                         this.visible = false;
                     }
 
@@ -279,19 +279,14 @@ export default {
                 this.contentResizeObserver = null;
             }
         },
-        isTargetClicked(event) {
-            return this.eventTarget && (this.eventTarget === event.target || this.eventTarget.contains(event.target));
+        isTargetClicked(target) {
+            return this.eventTarget && (this.eventTarget === target || this.eventTarget.contains(target));
         },
         containerRef(el) {
             this.container = el;
         },
         createStyle() {
             if (!this.styleElement && !this.isUnstyled) {
-                this.styleElement = document.createElement('style');
-                this.styleElement.type = 'text/css';
-                setAttribute(this.styleElement, 'nonce', this.$primevue?.config?.csp?.nonce);
-                document.head.appendChild(this.styleElement);
-
                 let innerHTML = '';
 
                 for (let breakpoint in this.breakpoints) {
@@ -304,12 +299,12 @@ export default {
                     `;
                 }
 
-                this.styleElement.innerHTML = innerHTML;
+                this.styleElement = this.$primevueBaseStyle.load(innerHTML, { name: `popover-style-${this.$id}`, ...this.$styleOptions });
             }
         },
         destroyStyle() {
             if (this.styleElement) {
-                document.head.removeChild(this.styleElement);
+                this.styleElement.unload();
                 this.styleElement = null;
             }
         },

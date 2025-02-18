@@ -1367,9 +1367,6 @@ export default {
 
             headers.forEach((header) => widths.push(getOuterWidth(header)));
 
-            this.destroyStyleElement();
-            this.createStyleElement();
-
             let innerHTML = '';
             let selector = `[data-pc-name="datatable"][${this.$attrSelector}] > [data-pc-section="tablecontainer"] ${this.virtualScrollerDisabled ? '' : '> [data-pc-name="virtualscroller"]'} > table[data-pc-section="table"]`;
 
@@ -1386,7 +1383,8 @@ export default {
                 `;
             });
 
-            this.styleElement.innerHTML = innerHTML;
+            this.destroyStyleElement();
+            this.createStyleElement(innerHTML);
         },
         bindColumnResizeEvents() {
             if (!this.documentColumnResizeListener) {
@@ -1883,8 +1881,6 @@ export default {
             }
         },
         addColumnWidthStyles(widths) {
-            this.createStyleElement();
-
             let innerHTML = '';
             let selector = `[data-pc-name="datatable"][${this.$attrSelector}] > [data-pc-section="tablecontainer"] ${this.virtualScrollerDisabled ? '' : '> [data-pc-name="virtualscroller"]'} > table[data-pc-section="table"]`;
 
@@ -1900,7 +1896,7 @@ export default {
     `;
             });
 
-            this.styleElement.innerHTML = innerHTML;
+            this.createStyleElement(innerHTML);
         },
         restoreColumnWidths() {
             if (this.columnWidthsState) {
@@ -2017,15 +2013,12 @@ export default {
             this.columns.forEach((col) => columnOrder.push(this.columnProp(col, 'columnKey') || this.columnProp(col, 'field')));
             this.d_columnOrder = columnOrder;
         },
-        createStyleElement() {
-            this.styleElement = document.createElement('style');
-            this.styleElement.type = 'text/css';
-            setAttribute(this.styleElement, 'nonce', this.$primevue?.config?.csp?.nonce);
-            document.head.appendChild(this.styleElement);
+        createStyleElement(css) {
+            this.styleElement = this.$primevueBaseStyle.load(css, { name: `datatable-style-${this.$id}`, ...this.$styleOptions });
         },
         destroyStyleElement() {
             if (this.styleElement) {
-                document.head.removeChild(this.styleElement);
+                this.styleElement.unload();
                 this.styleElement = null;
             }
         },

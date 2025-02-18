@@ -198,11 +198,6 @@ export default {
         },
         createStyle() {
             if (this.hasBreakpoints() && !this.isUnstyled) {
-                this.styleElement = document.createElement('style');
-                this.styleElement.type = 'text/css';
-                setAttribute(this.styleElement, 'nonce', this.$primevue?.config?.csp?.nonce);
-                document.body.appendChild(this.styleElement);
-
                 let innerHTML = '';
 
                 const keys = Object.keys(this.template);
@@ -249,7 +244,7 @@ export default {
                     }
                 }
 
-                this.styleElement.innerHTML = innerHTML;
+                this.styleElement = this.$primevueBaseStyle.load(innerHTML, { name: `paginator-style-${this.$id}`, ...this.$styleOptions });
             }
         },
         hasBreakpoints() {

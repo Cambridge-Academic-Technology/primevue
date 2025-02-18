@@ -559,13 +559,6 @@ export default {
             }
         },
         createStyle() {
-            if (!this.carouselStyle) {
-                this.carouselStyle = document.createElement('style');
-                this.carouselStyle.type = 'text/css';
-                setAttribute(this.carouselStyle, 'nonce', this.$primevue?.config?.csp?.nonce);
-                document.body.appendChild(this.carouselStyle);
-            }
-
             let innerHTML = `
                 .p-carousel[${this.$attrSelector}] .p-carousel-item {
                     flex: 1 0 ${100 / this.d_numVisible}%
@@ -596,7 +589,7 @@ export default {
                 }
             }
 
-            this.carouselStyle.innerHTML = innerHTML;
+            this.carouselStyle = this.$primevueBaseStyle.load(innerHTML, { name: `carousel-style-${this.$id}`, ...this.$styleOptions });
         },
         isVertical() {
             return this.orientation === 'vertical';
