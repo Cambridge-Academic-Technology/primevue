@@ -166,7 +166,7 @@ export default {
 <script setup>
 import { ref } from 'vue';
 import { zodResolver } from '@primevue/forms/resolvers/zod';
-import { useToast } from "primevue/usetoast";
+import { useToast } from "@primevue/primevue/usetoast";
 import { z } from 'zod';
 
 const toast = useToast();

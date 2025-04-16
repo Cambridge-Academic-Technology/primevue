@@ -31,7 +31,7 @@
 import TimesIcon from '@primevue/icons/times';
 import WindowMaximizeIcon from '@primevue/icons/windowmaximize';
 import WindowMinimizeIcon from '@primevue/icons/windowminimize';
-import Dialog, { type DialogPassThroughOptions, type DialogProps } from 'primevue/dialog';
+import Dialog, { type DialogPassThroughOptions, type DialogProps } from '@primevue/primevue/dialog';
 import { ref } from 'vue';
 import SecondaryButton from './SecondaryButton.vue';
 import { ptViewMerge } from './utils';

@@ -46,7 +46,7 @@
         "@primevue/forms": "workspace:*",
         "@primevue/nuxt-module": "workspace:*",
         "primeicons": "catalog:",
-        "primevue": "workspace:*",
+        "@primevue/primevue": "workspace:*",
         "chart.js": "catalog:app",
         "quill": "catalog:app",
         "superstruct": "^2.0.2",

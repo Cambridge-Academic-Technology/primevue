@@ -9,7 +9,7 @@ export default {
         return {
             code: {
                 basic: `
-import StyleClass from 'primevue/styleclass';
+import StyleClass from '@primevue/primevue/styleclass';
 
 app.directive('styleclass', StyleClass);
 `

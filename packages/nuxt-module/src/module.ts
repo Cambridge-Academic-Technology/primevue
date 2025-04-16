@@ -58,7 +58,7 @@ export default defineNuxtModule<ModuleOptions>({
         };
 
         //nuxt.options.build.transpile.push('nuxt');
-        nuxt.options.build.transpile.push('primevue');
+        nuxt.options.build.transpile.push('@primevue/primevue');
         hasTheme && nuxt.options.build.transpile.push('@primevue/themes');
         hasTheme && nuxt.options.build.transpile.push('@primeuix/themes');
 

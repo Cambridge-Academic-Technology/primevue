@@ -62,11 +62,11 @@ import { $dt } from '@primeuix/styled';
 import { absolutePosition, addClass, focus, getOffset, isTouchDevice } from '@primeuix/utils/dom';
 import { ZIndex } from '@primeuix/utils/zindex';
 import { ConnectedOverlayScrollHandler } from '@primevue/core/utils';
-import Button from 'primevue/button';
-import ConfirmationEventBus from 'primevue/confirmationeventbus';
-import FocusTrap from 'primevue/focustrap';
-import OverlayEventBus from 'primevue/overlayeventbus';
-import Portal from 'primevue/portal';
+import Button from '@primevue/primevue/button';
+import ConfirmationEventBus from '@primevue/primevue/confirmationeventbus';
+import FocusTrap from '@primevue/primevue/focustrap';
+import OverlayEventBus from '@primevue/primevue/overlayeventbus';
+import Portal from '@primevue/primevue/portal';
 import BaseConfirmPopup from './BaseConfirmPopup.vue';
 
 export default {

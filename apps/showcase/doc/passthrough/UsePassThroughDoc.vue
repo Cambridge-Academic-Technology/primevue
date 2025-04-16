@@ -20,8 +20,8 @@ export default {
             code1: {
                 basic: `
 import { createApp } from "vue";
-import PrimeVue from "primevue/config";
-import { usePassThrough } from "primevue/passthrough";
+import PrimeVue from "@primevue/primevue/config";
+import { usePassThrough } from "@primevue/primevue/passthrough";
 import BasePreset from "./basepreset";
 
 const app = createApp(App);

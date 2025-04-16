@@ -57,7 +57,7 @@ export default {
 </template>
 
 <script setup>
-import { useToast } from "primevue/usetoast";
+import { useToast } from "@primevue/primevue/usetoast";
 const toast = useToast();
 
 const showSticky = () => {

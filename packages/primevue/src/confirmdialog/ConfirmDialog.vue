@@ -57,9 +57,9 @@
 </template>
 
 <script>
-import Button from 'primevue/button';
-import ConfirmationEventBus from 'primevue/confirmationeventbus';
-import Dialog from 'primevue/dialog';
+import Button from '@primevue/primevue/button';
+import ConfirmationEventBus from '@primevue/primevue/confirmationeventbus';
+import Dialog from '@primevue/primevue/dialog';
 import BaseConfirmDialog from './BaseConfirmDialog.vue';
 
 export default {

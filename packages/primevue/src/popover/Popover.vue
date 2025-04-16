@@ -18,10 +18,10 @@ import { $dt } from '@primeuix/styled';
 import { absolutePosition, addClass, addStyle, focus, getOffset, isClient, isTouchDevice, setAttribute } from '@primeuix/utils/dom';
 import { ZIndex } from '@primeuix/utils/zindex';
 import { ConnectedOverlayScrollHandler } from '@primevue/core/utils';
-import FocusTrap from 'primevue/focustrap';
-import OverlayEventBus from 'primevue/overlayeventbus';
-import Portal from 'primevue/portal';
-import Ripple from 'primevue/ripple';
+import FocusTrap from '@primevue/primevue/focustrap';
+import OverlayEventBus from '@primevue/primevue/overlayeventbus';
+import Portal from '@primevue/primevue/portal';
+import Ripple from '@primevue/primevue/ripple';
 import BasePopover from './BasePopover.vue';
 
 export default {

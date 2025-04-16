@@ -40,7 +40,7 @@
 import { cn } from '@primeuix/utils';
 import MinusIcon from '@primevue/icons/minus';
 import PlusIcon from '@primevue/icons/plus';
-import Ripple from 'primevue/ripple';
+import Ripple from '@primevue/primevue/ripple';
 import BaseFieldset from './BaseFieldset.vue';
 
 export default {

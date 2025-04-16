@@ -163,11 +163,11 @@ import FilterFillIcon from '@primevue/icons/filterfill';
 import FilterSlashIcon from '@primevue/icons/filterslash';
 import PlusIcon from '@primevue/icons/plus';
 import TrashIcon from '@primevue/icons/trash';
-import Button from 'primevue/button';
-import FocusTrap from 'primevue/focustrap';
-import OverlayEventBus from 'primevue/overlayeventbus';
-import Portal from 'primevue/portal';
-import Select from 'primevue/select';
+import Button from '@primevue/primevue/button';
+import FocusTrap from '@primevue/primevue/focustrap';
+import OverlayEventBus from '@primevue/primevue/overlayeventbus';
+import Portal from '@primevue/primevue/portal';
+import Select from '@primevue/primevue/select';
 import { mergeProps } from 'vue';
 
 export default {

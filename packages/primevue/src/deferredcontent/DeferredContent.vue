@@ -6,7 +6,7 @@
 
 <script>
 import BaseComponent from '@primevue/core/basecomponent';
-import DeferredContentStyle from 'primevue/deferredcontent/style';
+import DeferredContentStyle from '@primevue/primevue/deferredcontent/style';
 
 export default {
     name: 'DeferredContent',

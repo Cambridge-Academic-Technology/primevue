@@ -11,7 +11,7 @@ export default {
         return {
             code: {
                 basic: `
-import PrimeVue from 'primevue/config';
+import PrimeVue from '@primevue/primevue/config';
 import { definePreset } from '@primeuix/themes';
 import Aura from '@primeuix/themes/aura';
 

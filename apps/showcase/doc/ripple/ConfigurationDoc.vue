@@ -21,7 +21,7 @@ mounted() {
 }
 `,
                 composition: `
-import { usePrimeVue } from 'primevue/config';
+import { usePrimeVue } from '@primevue/primevue/config';
 
 const PrimeVue = usePrimeVue();
 

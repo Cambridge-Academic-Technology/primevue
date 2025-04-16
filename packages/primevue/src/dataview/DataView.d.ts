@@ -9,8 +9,8 @@
  */
 import type { DefineComponent, DesignToken, EmitFn, HintedString, PassThrough } from '@primevue/core';
 import type { ComponentHooks } from '@primevue/core/basecomponent';
-import type { PaginatorPassThroughOptionType } from 'primevue/paginator';
-import type { PassThroughOptions } from 'primevue/passthrough';
+import type { PaginatorPassThroughOptionType } from '@primevue/primevue/paginator';
+import type { PassThroughOptions } from '@primevue/primevue/passthrough';
 import { VNode } from 'vue';
 
 export declare type DataViewPassThroughOptionType = DataViewPassThroughAttributes | ((options: DataViewPassThroughMethodOptions) => DataViewPassThroughAttributes | string) | string | null | undefined;

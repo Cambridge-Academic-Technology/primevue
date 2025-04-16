@@ -28,7 +28,7 @@ app.use(PrimeVue, {
             code2: {
                 basic: `
 import { defineComponent, onMounted } from "vue";
-import { usePrimeVue } from "primevue/config";
+import { usePrimeVue } from "@primevue/primevue/config";
 
 export default defineComponent({
     setup() {

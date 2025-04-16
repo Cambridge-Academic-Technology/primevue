@@ -12,9 +12,9 @@ export default {
             code: {
                 basic: `
 import { createApp } from "vue";
-import PrimeVue from "primevue/config";
-import InputText from 'primevue/inputtext';
-import Button from 'primevue/button';
+import PrimeVue from "@primevue/primevue/config";
+import InputText from '@primevue/primevue/inputtext';
+import Button from '@primevue/primevue/button';
 import App from './App.vue'
 const app = createApp(App);
 

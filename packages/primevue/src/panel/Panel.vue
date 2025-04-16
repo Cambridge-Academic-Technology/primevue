@@ -38,8 +38,8 @@
 import { cn } from '@primeuix/utils';
 import MinusIcon from '@primevue/icons/minus';
 import PlusIcon from '@primevue/icons/plus';
-import Button from 'primevue/button';
-import Ripple from 'primevue/ripple';
+import Button from '@primevue/primevue/button';
+import Ripple from '@primevue/primevue/ripple';
 import BasePanel from './BasePanel.vue';
 
 export default {

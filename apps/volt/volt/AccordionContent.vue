@@ -11,7 +11,7 @@
 </template>
 
 <script setup lang="ts">
-import AccordionContent, { type AccordionContentPassThroughOptions, type AccordionContentProps } from 'primevue/accordioncontent';
+import AccordionContent, { type AccordionContentPassThroughOptions, type AccordionContentProps } from '@primevue/primevue/accordioncontent';
 import { ref } from 'vue';
 import { ptViewMerge } from './utils';
 

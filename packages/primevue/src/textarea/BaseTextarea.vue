@@ -1,6 +1,6 @@
 <script>
 import BaseInput from '@primevue/core/baseinput';
-import TextareaStyle from 'primevue/textarea/style';
+import TextareaStyle from '@primevue/primevue/textarea/style';
 
 export default {
     name: 'BaseTextarea',

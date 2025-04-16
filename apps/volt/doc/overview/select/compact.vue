@@ -11,7 +11,7 @@
 
 <script setup lang="ts">
 import AngleDown from '@primevue/icons/search';
-import Select from 'primevue/select';
+import Select from '@primevue/primevue/select';
 import { ref } from 'vue';
 
 const theme = ref({

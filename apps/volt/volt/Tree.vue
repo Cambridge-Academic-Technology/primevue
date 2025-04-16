@@ -23,7 +23,7 @@
 import ChevronDownIcon from '@primevue/icons/chevrondown';
 import ChevronRightIcon from '@primevue/icons/chevronright';
 import SearchIcon from '@primevue/icons/search';
-import Tree, { type TreePassThroughOptions, type TreeProps } from 'primevue/tree';
+import Tree, { type TreePassThroughOptions, type TreeProps } from '@primevue/primevue/tree';
 import { ref } from 'vue';
 import { ptViewMerge } from './utils';
 
