@@ -216,12 +216,12 @@ import { ConnectedOverlayScrollHandler } from '@primevue/core/utils';
 import ChevronDownIcon from '@primevue/icons/chevrondown';
 import SpinnerIcon from '@primevue/icons/spinner';
 import TimesIcon from '@primevue/icons/times';
-import Chip from 'primevue/chip';
-import InputText from 'primevue/inputtext';
-import OverlayEventBus from 'primevue/overlayeventbus';
-import Portal from 'primevue/portal';
-import Ripple from 'primevue/ripple';
-import VirtualScroller from 'primevue/virtualscroller';
+import Chip from '@primevue/primevue/chip';
+import InputText from '@primevue/primevue/inputtext';
+import OverlayEventBus from '@primevue/primevue/overlayeventbus';
+import Portal from '@primevue/primevue/portal';
+import Ripple from '@primevue/primevue/ripple';
+import VirtualScroller from '@primevue/primevue/virtualscroller';
 import BaseAutoComplete from './BaseAutoComplete.vue';
 
 export default {
@@ -598,7 +598,7 @@ export default {
                 const value = this.visibleOptions
                     .slice(rangeStart, rangeEnd + 1)
                     .filter((option) => this.isValidOption(option))
-                    .filter((option) => !this.isSelected(option))                    
+                    .filter((option) => !this.isSelected(option))
                     .map((option) => this.getOptionValue(option));
 
                 this.updateModel(event, [...(this.d_value || []), ...value]);

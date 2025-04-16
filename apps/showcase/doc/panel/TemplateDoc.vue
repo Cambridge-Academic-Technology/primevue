@@ -181,9 +181,9 @@ export default {
 
 <script setup>
 import { ref } from 'vue';
-import { useToast } from "primevue/usetoast";
+import { useToast } from "@primevue/primevue/usetoast";
 import { useRouter } from 'vue-router';
-import Menu from 'primevue/menu';
+import Menu from '@primevue/primevue/menu';
 
 const menu = ref(null);
 const toast = useToast();

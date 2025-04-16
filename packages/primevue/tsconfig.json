@@ -16,7 +16,7 @@
         "incremental": true,
         "baseUrl": ".",
         "paths": {
-            "primevue/*": ["./src/*"],
+            "@primevue/primevue/*": ["./src/*"],
             "@primevue/core/*": ["../../packages/core/src/*"],
             "@primevue/icons/*": ["../../packages/icons/src/*"]
         }

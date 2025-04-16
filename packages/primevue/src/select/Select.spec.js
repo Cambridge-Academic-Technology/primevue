@@ -1,5 +1,5 @@
 import { mount } from '@vue/test-utils';
-import PrimeVue from 'primevue/config';
+import PrimeVue from '@primevue/primevue/config';
 import { h } from 'vue';
 import Select from './Select.vue';
 

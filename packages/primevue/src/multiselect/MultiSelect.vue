@@ -234,15 +234,15 @@ import ChevronDownIcon from '@primevue/icons/chevrondown';
 import SearchIcon from '@primevue/icons/search';
 import SpinnerIcon from '@primevue/icons/spinner';
 import TimesIcon from '@primevue/icons/times';
-import Checkbox from 'primevue/checkbox';
-import Chip from 'primevue/chip';
-import IconField from 'primevue/iconfield';
-import InputIcon from 'primevue/inputicon';
-import InputText from 'primevue/inputtext';
-import OverlayEventBus from 'primevue/overlayeventbus';
-import Portal from 'primevue/portal';
-import Ripple from 'primevue/ripple';
-import VirtualScroller from 'primevue/virtualscroller';
+import Checkbox from '@primevue/primevue/checkbox';
+import Chip from '@primevue/primevue/chip';
+import IconField from '@primevue/primevue/iconfield';
+import InputIcon from '@primevue/primevue/inputicon';
+import InputText from '@primevue/primevue/inputtext';
+import OverlayEventBus from '@primevue/primevue/overlayeventbus';
+import Portal from '@primevue/primevue/portal';
+import Ripple from '@primevue/primevue/ripple';
+import VirtualScroller from '@primevue/primevue/virtualscroller';
 import BaseMultiSelect from './BaseMultiSelect.vue';
 
 export default {

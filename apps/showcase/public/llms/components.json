@@ -40046,7 +40046,7 @@
           "label": "Overview",
           "description": "With @primevue/icons for icons and primevue for components (except Editor and Chart), multiple items can be imported together.",
           "examples": {
-            "basic": "import { Button, InputText } from 'primevue';\nimport { SearchIcon, BellIcon } from '@primevue/icons';\n\n<script setup>\nimport * as PrimeVue from 'primevue';\n\nconst items = [\n    { as: 'Button', class: 'my-button-class' },\n    { as: 'InputText', class: 'my-inputtext-class' }\n};\n</script>\n\n<template>\n    <component v-for=\"item of items\" :is=\"PrimeVue[item.as]\" :class=\"item.class\" />\n</template>"
+            "basic": "import { Button, InputText } from '@primevue/primevue';\nimport { SearchIcon, BellIcon } from '@primevue/icons';\n\n<script setup>\nimport * as PrimeVue from '@primevue/primevue';\n\nconst items = [\n    { as: 'Button', class: 'my-button-class' },\n    { as: 'InputText', class: 'my-inputtext-class' }\n};\n</script>\n\n<template>\n    <component v-for=\"item of items\" :is=\"PrimeVue[item.as]\" :class=\"item.class\" />\n</template>"
           }
         }
       ]

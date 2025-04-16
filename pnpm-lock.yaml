@@ -123,7 +123,7 @@ importers:
       primeicons:
         specifier: 'catalog:'
         version: 7.0.0
-      primevue:
+      '@primevue/primevue':
         specifier: workspace:*
         version: link:../../packages/primevue
       quill:
@@ -187,7 +187,7 @@ importers:
       primeicons:
         specifier: 'catalog:'
         version: 7.0.0
-      primevue:
+      '@primevue/primevue':
         specifier: workspace:*
         version: link:../../packages/primevue
       quill:
@@ -317,7 +317,7 @@ importers:
       pathe:
         specifier: ^1.1.2
         version: 1.1.2
-      primevue:
+      '@primevue/primevue':
         specifier: workspace:*
         version: link:../primevue
       unplugin-vue-components:

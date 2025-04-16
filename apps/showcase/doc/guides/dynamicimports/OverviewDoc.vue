@@ -3,7 +3,7 @@
         <p>With <i>@primevue/icons</i> for icons and <i>primevue</i> for components (except Editor and Chart), multiple items can be imported together.</p>
     </DocSectionText>
     <pre v-code.script><code>
-import { Button, InputText } from 'primevue';
+import { Button, InputText } from '@primevue/primevue';
 import { SearchIcon, BellIcon } from '@primevue/icons';
 
 </code></pre>
@@ -12,7 +12,7 @@ import { SearchIcon, BellIcon } from '@primevue/icons';
     </div>
     <pre v-code><code>
 &lt;script setup&gt;
-import * as PrimeVue from 'primevue';
+import * as PrimeVue from '@primevue/primevue';
 
 const items = [
     { as: 'Button', class: 'my-button-class' },

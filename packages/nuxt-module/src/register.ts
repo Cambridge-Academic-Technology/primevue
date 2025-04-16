@@ -2,7 +2,7 @@ import { addComponent, addImports } from '@nuxt/kit';
 import { isNotEmpty, isString, resolve } from '@primeuix/utils/object';
 import type { MetaType } from '@primevue/metadata';
 import { components, composables, directives } from '@primevue/metadata';
-import type { PrimeVueConfiguration } from 'primevue/config';
+import type { PrimeVueConfiguration } from '@primevue/primevue/config';
 import type { ConstructsType, ModuleOptions, ResolvePathOptions } from './types';
 import { Utils } from './utils';
 
@@ -25,7 +25,7 @@ function registerConfig(resolvePath: any) {
         {
             name: 'PrimeVue',
             as: 'PrimeVue',
-            from: resolvePath({ name: 'PrimeVue', as: 'PrimeVue', from: `primevue/config`, type: 'config' })
+            from: resolvePath({ name: 'PrimeVue', as: 'PrimeVue', from: `@primevue/primevue/config`, type: 'config' })
         }
     ];
 }
@@ -97,7 +97,7 @@ function registerServices(resolvePath: any, registered: any) {
     return [...services].map((service) => ({
         name: service,
         as: service,
-        from: resolvePath({ name: service, as: service, from: `primevue/${service.toLowerCase()}`, type: 'service' })
+        from: resolvePath({ name: service, as: service, from: `@primevue/primevue/${service.toLowerCase()}`, type: 'service' })
     }));
 }
 

@@ -14,7 +14,7 @@
 </template>
 
 <script setup lang="ts">
-import Popover, { type PopoverPassThroughOptions, type PopoverProps } from 'primevue/popover';
+import Popover, { type PopoverPassThroughOptions, type PopoverProps } from '@primevue/primevue/popover';
 import { ref } from 'vue';
 import { ptViewMerge } from './utils';
 

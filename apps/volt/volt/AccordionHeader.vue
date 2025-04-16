@@ -17,7 +17,7 @@
 <script setup lang="ts">
 import ChevronUpIcon from '@primevue/icons/chevrondown';
 import ChevronDownIcon from '@primevue/icons/chevronup';
-import AccordionHeader, { type AccordionHeaderPassThroughOptions, type AccordionHeaderProps } from 'primevue/accordionheader';
+import AccordionHeader, { type AccordionHeaderPassThroughOptions, type AccordionHeaderProps } from '@primevue/primevue/accordionheader';
 import { ref } from 'vue';
 import { ptViewMerge } from './utils';
 

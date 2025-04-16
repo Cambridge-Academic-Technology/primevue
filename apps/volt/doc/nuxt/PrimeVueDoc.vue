@@ -23,7 +23,7 @@ yarn add primevue
 pnpm add primevue
 `);
 
-const code2 = ref(`import PrimeVue from 'primevue/config';
+const code2 = ref(`import PrimeVue from '@primevue/primevue/config';
 
 export default defineNuxtPlugin((nuxtApp) => {
     nuxtApp.vueApp.use(PrimeVue, {
@@ -32,11 +32,11 @@ export default defineNuxtPlugin((nuxtApp) => {
 });
 `);
 
-const code3 = ref(`import PrimeVue from 'primevue/config';
-import AnimateOnScroll from 'primevue/animateonscroll';
-import ConfirmationService from 'primevue/confirmationservice';
-import StyleClass from 'primevue/styleclass';
-import ToastService from 'primevue/toastservice';
+const code3 = ref(`import PrimeVue from '@primevue/primevue/config';
+import AnimateOnScroll from '@primevue/primevue/animateonscroll';
+import ConfirmationService from '@primevue/primevue/confirmationservice';
+import StyleClass from '@primevue/primevue/styleclass';
+import ToastService from '@primevue/primevue/toastservice';
 
 export default defineNuxtPlugin((nuxtApp) => {
     nuxtApp.vueApp.use(PrimeVue, {

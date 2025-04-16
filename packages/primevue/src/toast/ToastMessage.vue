@@ -27,7 +27,7 @@ import ExclamationTriangleIcon from '@primevue/icons/exclamationtriangle';
 import InfoCircleIcon from '@primevue/icons/infocircle';
 import TimesIcon from '@primevue/icons/times';
 import TimesCircleIcon from '@primevue/icons/timescircle';
-import Ripple from 'primevue/ripple';
+import Ripple from '@primevue/primevue/ripple';
 
 export default {
     name: 'ToastMessage',

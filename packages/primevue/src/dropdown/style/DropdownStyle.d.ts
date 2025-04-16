@@ -7,7 +7,7 @@
  * @module dropdownstyle
  *
  */
-import type { SelectStyle } from 'primevue/select/style';
+import type { SelectStyle } from '@primevue/primevue/select/style';
 
 export enum DropdownClasses {}
 

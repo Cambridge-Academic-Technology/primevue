@@ -46,7 +46,7 @@ import AngleDoubleLeftIcon from '@primevue/icons/angledoubleleft';
 import AngleDoubleRightIcon from '@primevue/icons/angledoubleright';
 import AngleLeftIcon from '@primevue/icons/angleleft';
 import AngleRightIcon from '@primevue/icons/angleright';
-import Paginator, { type PaginatorPassThroughOptions, type PaginatorProps } from 'primevue/paginator';
+import Paginator, { type PaginatorPassThroughOptions, type PaginatorProps } from '@primevue/primevue/paginator';
 import {ref} from 'vue'
 import SecondaryButton from './SecondaryButton.vue';
 import { ptViewMerge } from './utils';

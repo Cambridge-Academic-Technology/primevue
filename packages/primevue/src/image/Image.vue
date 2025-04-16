@@ -64,9 +64,9 @@ import SearchMinusIcon from '@primevue/icons/searchminus';
 import SearchPlusIcon from '@primevue/icons/searchplus';
 import TimesIcon from '@primevue/icons/times';
 import UndoIcon from '@primevue/icons/undo';
-import FocusTrap from 'primevue/focustrap';
-import Portal from 'primevue/portal';
-import { blockBodyScroll, unblockBodyScroll } from 'primevue/utils';
+import FocusTrap from '@primevue/primevue/focustrap';
+import Portal from '@primevue/primevue/portal';
+import { blockBodyScroll, unblockBodyScroll } from '@primevue/primevue/utils';
 import BaseImage from './BaseImage.vue';
 
 export default {

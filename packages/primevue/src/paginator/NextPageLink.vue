@@ -7,7 +7,7 @@
 <script>
 import BaseComponent from '@primevue/core/basecomponent';
 import AngleRightIcon from '@primevue/icons/angleright';
-import Ripple from 'primevue/ripple';
+import Ripple from '@primevue/primevue/ripple';
 
 export default {
     name: 'NextPageLink',

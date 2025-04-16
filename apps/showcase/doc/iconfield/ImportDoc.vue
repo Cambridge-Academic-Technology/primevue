@@ -9,8 +9,8 @@ export default {
         return {
             code: {
                 basic: `
-import IconField from 'primevue/iconfield';
-import InputIcon from 'primevue/inputicon';
+import IconField from '@primevue/primevue/iconfield';
+import InputIcon from '@primevue/primevue/inputicon';
 `
             }
         };

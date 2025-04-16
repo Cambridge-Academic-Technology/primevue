@@ -29,7 +29,7 @@ import ChevronDownIcon from '@primevue/icons/chevrondown';
 import SearchIcon from '@primevue/icons/search';
 import SpinnerIcon from '@primevue/icons/spinner';
 import TimesIcon from '@primevue/icons/times';
-import MultiSelect, { type MultiSelectPassThroughOptions, type MultiSelectProps } from 'primevue/multiselect';
+import MultiSelect, { type MultiSelectPassThroughOptions, type MultiSelectProps } from '@primevue/primevue/multiselect';
 import { ref } from 'vue';
 import { ptViewMerge } from './utils';
 

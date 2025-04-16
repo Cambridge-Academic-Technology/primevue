@@ -30,9 +30,9 @@
 <script>
 import ChevronRightIcon from '@primevue/icons/chevronright';
 import ChevronUpIcon from '@primevue/icons/chevronup';
-import AccordionContent from 'primevue/accordioncontent';
-import AccordionHeader from 'primevue/accordionheader';
-import AccordionPanel from 'primevue/accordionpanel';
+import AccordionContent from '@primevue/primevue/accordioncontent';
+import AccordionHeader from '@primevue/primevue/accordionheader';
+import AccordionPanel from '@primevue/primevue/accordionpanel';
 import { mergeProps } from 'vue';
 import BaseAccordion from './BaseAccordion.vue';
 

@@ -240,7 +240,7 @@ import * as s from 'superstruct';
 import * as v from 'valibot';
 import * as yup from 'yup';
 import { z } from 'zod';
-import { useToast } from 'primevue/usetoast';
+import { useToast } from '@primevue/primevue/usetoast';
 
 const toast = useToast();
 

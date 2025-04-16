@@ -1,6 +1,6 @@
 <script>
 import BaseInput from '@primevue/core/baseinput';
-import InputMaskStyle from 'primevue/inputmask/style';
+import InputMaskStyle from '@primevue/primevue/inputmask/style';
 
 export default {
     name: 'BaseInputMask',

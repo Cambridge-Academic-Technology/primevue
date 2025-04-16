@@ -1,6 +1,6 @@
 <script>
 import BaseComponent from '@primevue/core/basecomponent';
-import InputIconStyle from 'primevue/inputicon/style';
+import InputIconStyle from '@primevue/primevue/inputicon/style';
 
 export default {
     name: 'BaseInputIcon',

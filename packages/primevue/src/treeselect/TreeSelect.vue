@@ -136,11 +136,11 @@ import { ZIndex } from '@primeuix/utils/zindex';
 import { ConnectedOverlayScrollHandler } from '@primevue/core/utils';
 import ChevronDownIcon from '@primevue/icons/chevrondown';
 import TimesIcon from '@primevue/icons/times';
-import Chip from 'primevue/chip';
-import OverlayEventBus from 'primevue/overlayeventbus';
-import Portal from 'primevue/portal';
-import Ripple from 'primevue/ripple';
-import Tree from 'primevue/tree';
+import Chip from '@primevue/primevue/chip';
+import OverlayEventBus from '@primevue/primevue/overlayeventbus';
+import Portal from '@primevue/primevue/portal';
+import Ripple from '@primevue/primevue/ripple';
+import Tree from '@primevue/primevue/tree';
 import BaseTreeSelect from './BaseTreeSelect.vue';
 
 export default {

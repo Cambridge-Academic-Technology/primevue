@@ -17,7 +17,7 @@ export default {
             code1: {
                 basic: `
 import { createApp } from "vue";
-import PrimeVue from "primevue/config";
+import PrimeVue from "@primevue/primevue/config";
 const app = createApp(App);
 
 app.use(PrimeVue, { unstyled: true });

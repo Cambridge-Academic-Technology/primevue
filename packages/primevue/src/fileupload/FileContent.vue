@@ -20,8 +20,8 @@
 <script>
 import BaseComponent from '@primevue/core/basecomponent';
 import TimesIcon from '@primevue/icons/times';
-import Badge from 'primevue/badge';
-import Button from 'primevue/button';
+import Badge from '@primevue/primevue/badge';
+import Button from '@primevue/primevue/button';
 
 export default {
     name: 'FileContent',

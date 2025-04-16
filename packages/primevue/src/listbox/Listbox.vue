@@ -138,11 +138,11 @@ import { FilterService } from '@primevue/core/api';
 import BlankIcon from '@primevue/icons/blank';
 import CheckIcon from '@primevue/icons/check';
 import SearchIcon from '@primevue/icons/search';
-import IconField from 'primevue/iconfield';
-import InputIcon from 'primevue/inputicon';
-import InputText from 'primevue/inputtext';
-import Ripple from 'primevue/ripple';
-import VirtualScroller from 'primevue/virtualscroller';
+import IconField from '@primevue/primevue/iconfield';
+import InputIcon from '@primevue/primevue/inputicon';
+import InputText from '@primevue/primevue/inputtext';
+import Ripple from '@primevue/primevue/ripple';
+import VirtualScroller from '@primevue/primevue/virtualscroller';
 import BaseListbox from './BaseListbox.vue';
 
 export default {

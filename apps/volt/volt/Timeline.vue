@@ -13,7 +13,7 @@
 </template>
 
 <script setup lang="ts">
-import Timeline, { type TimelinePassThroughOptions, type TimelineProps } from 'primevue/timeline';
+import Timeline, { type TimelinePassThroughOptions, type TimelineProps } from '@primevue/primevue/timeline';
 import { ref } from 'vue';
 import { ptViewMerge } from './utils';
 

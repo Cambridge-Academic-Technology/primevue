@@ -11,7 +11,7 @@
 
 <script setup lang="ts">
 import ChevronDownIcon from '@primevue/icons/chevrondown';
-import Select from 'primevue/select';
+import Select from '@primevue/primevue/select';
 import { ref } from 'vue';
 
 const theme = ref({

@@ -23,7 +23,7 @@
 <script setup lang="ts">
 import MinusIcon from '@primevue/icons/minus';
 import PlusIcon from '@primevue/icons/plus';
-import Panel, { type PanelPassThroughOptions, type PanelProps } from 'primevue/panel';
+import Panel, { type PanelPassThroughOptions, type PanelProps } from '@primevue/primevue/panel';
 import { ref } from 'vue';
 import SecondaryButton from './SecondaryButton.vue';
 import { ptViewMerge } from './utils';

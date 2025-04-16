@@ -107,8 +107,8 @@ import ChevronDownIcon from '@primevue/icons/chevrondown';
 import ChevronRightIcon from '@primevue/icons/chevronright';
 import MinusIcon from '@primevue/icons/minus';
 import SpinnerIcon from '@primevue/icons/spinner';
-import Checkbox from 'primevue/checkbox';
-import Ripple from 'primevue/ripple';
+import Checkbox from '@primevue/primevue/checkbox';
+import Ripple from '@primevue/primevue/ripple';
 
 export default {
     name: 'TreeNode',

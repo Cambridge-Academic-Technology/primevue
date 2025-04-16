@@ -1,6 +1,6 @@
 <script>
 import BaseComponent from '@primevue/core/basecomponent';
-import MessageStyle from 'primevue/message/style';
+import MessageStyle from '@primevue/primevue/message/style';
 
 export default {
     name: 'BaseMessage',

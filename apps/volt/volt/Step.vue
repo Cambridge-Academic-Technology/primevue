@@ -13,7 +13,7 @@
 </template>
 
 <script setup lang="ts">
-import Step, { type StepPassThroughOptions, type StepProps } from 'primevue/step';
+import Step, { type StepPassThroughOptions, type StepProps } from '@primevue/primevue/step';
 import { ref } from 'vue';
 import { ptViewMerge } from './utils';
 
